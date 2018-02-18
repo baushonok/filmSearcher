@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'search-film',
     environment: environment,
-    baseURL: '/',
+    baseURL: '/searchFilm/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {

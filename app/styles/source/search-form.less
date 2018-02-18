@@ -1,0 +1,54 @@
+form#searchForm
+{
+	@height: 24px;
+
+	position: relative;
+	left: 50%;
+
+	display: inline-block;
+
+	max-width: 980px;
+	margin: 0 auto 30px;
+
+	font-size: inherit;
+	line-height: @height;
+
+	transform: translateX(-50%);
+
+	> label
+	{
+		margin-right: 4px;
+	}
+
+	> input[type="text"]
+	{
+		box-sizing: border-box;
+		width: 25vw;
+		max-width: 245px;
+		height: @height;
+		min-height: 1em;
+		padding: 2px;
+		margin-right: 12px;
+
+		font-size: 1em;
+		vertical-align: top;
+
+		border: 1px solid black;
+	}
+
+	> button
+	{
+		display: inline-block;
+
+		min-width: 50px;
+		max-width: 80px;
+		height: @height;
+
+		font-size: 1em;
+		vertical-align: top;
+
+		&[type="submit"] {
+			margin-right: 8px;
+		}
+	}
+}

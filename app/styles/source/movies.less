@@ -1,0 +1,72 @@
+ul.movies
+{
+	display: flex;
+
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-left: 0;
+	margin: 0 20px;
+
+	font-size: inherit;
+
+	list-style-type: none;
+
+	> li
+	{
+		overflow-x: auto;
+
+		max-width: 15%;
+		min-width: 125px;
+		margin: 1vw;
+
+		cursor: pointer;
+
+		font-size: inherit;
+
+		div
+		{
+			position: relative;
+			z-index: -1;
+
+			figure
+			{
+				margin: 0;
+
+				font-size: inherit;
+
+				> img
+				{
+					display: block;
+					width: 100%;
+				}
+
+				> figcaption
+				{
+					margin-top: 5px;
+
+					font-size: inherit;
+
+					> h2,
+					> span.year
+					{
+						margin: 0;
+
+						text-align: center;
+					}
+
+					> h2
+					{
+						font-size: 1em;
+					}
+
+					> span.year
+					{
+						display: block;
+
+						font-size: .75em;
+					}
+				}
+			}
+		}
+	}
+}

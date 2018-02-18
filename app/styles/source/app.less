@@ -1,0 +1,168 @@
+body
+{
+	min-width: 320px;
+	margin: 0 auto;
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+
+	&.open
+	{
+		position: relative;
+
+		&::before
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: 100%;
+			height: 100%;
+
+			display: block;
+			content: '';
+
+			background: rgba( 0, 0, 0, .85 );
+		}
+
+		aside.movieInformation
+		{
+			display: block;
+		}
+	}
+
+	h1
+	{
+		margin-top: 0;
+		margin-bottom: 10px;
+
+		font-size: 2em;
+		text-align: center;
+
+		& ~ p
+		{
+			margin-bottom: 30px;
+
+			font-size: 1em;
+			line-height: 1.2;
+			text-align: center;
+		}
+	}
+
+	@media (max-width: 980px)
+	{
+		font-size: 12px;
+	}
+
+	@media (max-width: 480px)
+	{
+		font-size: 10px;
+	}
+}
+
+aside.movieInformation
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+
+	min-width: 50%;
+	max-width: 60%;
+	height: 620px;
+	margin: auto;
+
+	display: none;
+
+	vertical-align: top;
+
+	background: white;
+}
+
+
+aside.movieInformation > img
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 20px;
+	width: 50%;
+	margin: auto;
+}
+
+aside.movieInformation > div.description
+{
+	width: 50%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: 20px;
+	height: 560px;
+}
+
+aside.movieInformation > div.description > h3
+{
+	font-size: 24px;
+	margin: 0 0 10px 0;
+}
+aside.movieInformation > div.description > h4
+{
+	margin-top: 15px;
+	margin-bottom: 0;
+	display: inline-block;
+}
+
+aside.movieInformation > div.description > span.original-title,
+aside.movieInformation > div.description > time,
+aside.movieInformation > div.description > span.director
+{
+	margin: 0;
+	display: inline-block;
+	font-weight: 300;
+	width: 298px;
+}
+
+aside.movieInformation > div.description > time,
+aside.movieInformation > div.description > span.director
+{
+	width: 380px;
+}
+
+aside.movieInformation > div.description > h4.description
+{
+	display: block;
+	margin: 40px 0 5px 0;
+}
+
+aside.movieInformation > div.description > p
+{
+	margin: 0;
+	font-size: 14px;
+}
+
+aside.movieInformation > div.description > ul.writers
+{
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+aside.movieInformation > div.description > ul.writers > li
+{
+	display: inline-block;
+	width: 30%;
+	margin-bottom: 5px;
+	font-weight: 300;
+}
+
+button#close
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+}

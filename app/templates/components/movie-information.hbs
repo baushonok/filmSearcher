@@ -1,0 +1,28 @@
+<aside class="movieInformation">
+	<button type="button"
+			id="close"
+			{{action "click"}}>
+		Close
+	</button>
+	<img src="#" alt="" />
+	<div class="description">
+		<h3>Film description</h3>
+		<h4>Title:</h4>
+		<span class="original-title">
+			{{filmDetails.title}}
+		</span>
+		<h4>Director:</h4>
+		<span class="director">
+		</span>
+		<h4>Writers:</h4>
+		<ul class="writers"></ul>
+		<h4>Release date:</h4>
+		<time datetime=""></time>
+		<h4>Rating:</h4>
+		<span class="rating"></span>
+		<h4 class="description">Description:</h4>
+		<p>
+			{{filmDetails.description}}
+		</p>
+	</div>
+</aside>

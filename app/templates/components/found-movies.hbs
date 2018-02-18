@@ -1,0 +1,8 @@
+<ul class="movies">
+	{{#each movies.results as |film|}}
+		<li id={{film.id}} onclick={{action "click"}}>
+			{{found-movie film=film}}
+		</li>
+	{{/each}}
+</ul>
+<ol class="pagination-list"></ol>

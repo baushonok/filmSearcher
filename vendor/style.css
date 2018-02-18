@@ -1,0 +1,16 @@
+body
+{
+	background-color: red;
+}
+
+ul.movies
+{
+	list-style-type: none;
+}
+
+ul.movies > li > figure > img
+{
+	display: block;
+	
+	width: 50px;
+}
